@@ -1,0 +1,51 @@
+.wrapper {
+  
+}
+
+body{
+font-family: PT Astra Sans;
+
+}
+.footer #block{
+position:relative;
+margin-top:2px;
+width:99%;
+ height:99%;
+background: #212121;
+}
+ 
+ 
+.footer #text{
+  position: relative;
+  right:201;
+  width:123;
+  margin:14px auto;
+  top:-51px;
+}
+
+.footer1{
+            float:left;
+    width:499px;
+    }
+
+.footer h1{
+   color: #ffc9c9;
+   font-family: PT Astra Sans;
+   margin-top:5px;
+   margin-left:5px;  
+}
+
+.footer {
+    position: fixed;
+    right:0;
+    bottom:0;
+    width: 99%;
+    height: 1em;
+    overflow:hidden;
+    transition: all 2s ease;
+
+}
+.footer:hover {
+    transition: all 2s ease;
+    height: 9em;
+}

@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+/* Общие стили */
+.snip1143 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.snip1143 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+/* Стили для меню */
+.snip1143 li {
+  display: block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+
+.snip1143 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.snip1143 a:before,
+.snip1143 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1143 a:before {
+  top: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #c0392b;
+}
+
+.snip1143 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+
+.snip1143 li:hover a,
+.snip1143 .current a {
+  transform: translateY(-100%);
+}
+
+/* Дополнительные стили для демонстрации */
+body {
+  height: 15 vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+}
+
+/* Медиа-запрос для адаптивности на мобильных устройствах */
+@media screen and (max-width: 480px) {
+  .snip1143 {
+    font-size: 14px;
+  }
+  /* Дополнительные стили для демонстрации */
+  body {
+    height: 15 vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+  }
+}
+
+/* Медиа-запрос для адаптивности на планшетных устройствах */
+@media screen and (max-width: 768px) {
+  .snip1143 {
+    font-size: 14px;
+  }
+  /* Дополнительные стили для демонстрации */
+  body {
+    height: 7 vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+  }
+}
